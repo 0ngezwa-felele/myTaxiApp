@@ -1,0 +1,18 @@
+
+    <div *ngIf="rank">
+      <div>{{ rank.mainRank }}</div>
+      <div>{{ rank.open }}</div>
+      <div>{{ rank.ranks }}</div>
+      <div *ngFor="let destination of rank.ranks">
+        <div>{{ destination.destination }}</div>
+        <div>{{ destination.limit }}</div>
+        <div>{{ destination.queue }}</div>
+        <div>{{ destination.fare }}</div>
+        <div>{{ destination.trips }}</div>
+        <div>{{ destination.taxis }}</div>
+        <div>{{ destination.overallTotal }}</div>
+        <div>{{ destination.profit }}</div>
+        <div>{{ destination.feedback }}</div>
+      </div>
+    </div>
+  
